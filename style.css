@@ -1,0 +1,457 @@
+/* ESTILO GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    cursor: none;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+#logo {
+    width: 280px;
+}
+
+header {
+    background-color: rgba(131, 131, 131, 0.116);;
+    padding: 0px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover {
+    color: #000000;
+    transition: 2s;
+    transform: scale(1.05);
+}
+
+header a:not(hover) {
+    transition: 2s;
+    transform: scale(1);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-saibamais button {
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    color: black;
+    cursor: pointer;
+    background-color: #00FF08;
+}
+
+header .btn-saibamais button:hover {
+    box-shadow: #00FF08 2px 2px 10px;
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+header .btn-saibamais button:not(:hover) {
+    transition: 1s;
+    transform: scale(1);
+}
+
+header .interface .modo-light-dark img {
+    width: 100px;
+}
+
+header .interface .modo-light-dark {
+    transition: 2s;
+    cursor: pointer;
+    padding: 0 4%;
+}
+
+header .interface .modo-light-dark:hover {
+    transition: 2s;
+    transform: scale(1.05);
+}
+
+
+/* ESTILO TOPO DO SITE */
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .txt-topo-site h1 {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #00FF08;
+}
+
+.txt-topo-site {
+    color: rgb(0, 0, 0);
+}
+
+section .btn-fazerparte button {
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    color: black;
+    cursor: pointer;
+    background-color: #00FF08;
+}
+
+section .btn-fazerparte button:hover {
+    box-shadow: #00FF08 2px 2px 10px;
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+section .btn-fazerparte button:not(hover) {
+    transition: 2s;
+    transform: scale(1.0);
+}
+
+.topo-do-site .img-topo-site {
+    padding: 0px 4%;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: celularflutuar 2s ease-in-out infinite alternate;
+}
+
+#imagemcelular {
+    scale: 1.05;
+}
+
+@keyframes celularflutuar { /* ANIMAÇÃO CELULAR */
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* ÚLTIMAS NOTICIAS */
+
+section.ultimas-noticias {
+    padding: 40px 4%;
+}
+
+section.ultimas-noticias .flex {
+    gap: 50px;
+}
+
+.ultimas-noticias .txt-ultimas-noticias {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+}
+
+.ultimas-noticias .txt-ultimas-noticias span {
+    color: #00FF08;
+}
+
+.ultimas-noticias .noticia {
+    color: rgb(0, 0, 0);
+    background-color: rgba(128, 128, 128, 0.301);
+    padding: 40px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    margin-top: 25px;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.ultimas-noticias .noticia:hover { 
+    transition: 2s;
+    box-shadow: #9b9b9b 3px 3px 15px;
+    transform: scale(1.03);
+}
+
+.ultimas-noticias .noticia i {
+    color: #00FF08;
+    font-size: 70px;
+}
+
+.ultimas-noticias .noticia h3 { 
+    font-size: 26px;
+    margin: 15px 0;
+}
+
+.ultimas-noticias .flex a {
+    text-decoration: none;
+}
+
+
+/* FORMULARIO */
+
+section#formulario {
+    padding: 80px 4%;
+}
+
+section#formulario .interface {
+    background-color: rgba(88, 88, 88, 0.26);
+    padding: 100px;
+    border-radius: 35px;
+}
+
+section#formulario .interface .txt-formulario{
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+section#formulario .interface .txt-formulario span {
+    color: #00FF08;
+    animation: underline 2s ease-in-out infinite alternate;
+}
+
+@keyframes underline { /* ANIMAÇÃO UNDERLINE */
+    0% {
+        text-decoration: none;
+    }
+
+    100% {
+        text-decoration: underline;
+    }
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: rgba(131, 131, 131, 0.418);
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 15px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 250px;
+    background-color: #00FF08;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 1s;
+}
+
+form .btn-enviar input:hover {
+    box-shadow: #00FF08 2px 2px 10px;
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+
+/* PÁGINA DE OBRIGADO */
+
+header{
+    position: relative;
+}
+
+main .interfaceobrigado {
+    text-align: center;
+    padding: 40px 4%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+main .interfaceobrigado h1 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+main .interfaceobrigado span {
+    color: #00FF08;
+}
+
+.logoobrigado {
+    scale: 0.90;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    animation: logoandar 2s ease-in-out infinite alternate;
+}
+
+@keyframes logoandar { /* ANIMAÇÃO LOGO OBRIGADO */
+    0% {
+        right: -10px;
+    }
+
+    100% {
+        right: 20px;
+    }
+
+}
+
+main .interfaceobrigado .back-home button {
+    border-radius: 10px;
+    margin-top: 18px;
+    padding: 25px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #00FF08;
+    transition: 1s;
+}
+
+main .interfaceobrigado .back-home button:hover {
+    box-shadow: #00FF08 2px 2px 10px;
+    transition: 2s;
+    transform: scale(1.05);
+}
+
+/* SOBRE NÓS (Passar o código)*/
+
+.interfacesobre {
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section.interfacesobre {
+    padding: 40px 4%;
+}
+
+section.interfacesobre .flex {
+    gap: 50px;
+}
+
+#sobre-nos .interfacesobre .imgsobrenos img {
+    width: 550px;
+}
+
+.txt-sobre-nos {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.txt-sobre-nos h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.txt-sobre-nos h2 span { 
+    color: #00FF08;
+}
+
+.txt-sobre-nos p {
+    font-size: 18px;
+}
+
+.interfacesobre .flex .txt-sobre-nos {
+    padding: 40px;
+    background-color: rgba(131, 131, 131, 0.116);
+    border: 2px solid rgba(0, 0, 0, 0.13);
+    border-radius: 25px;
+    margin-top: 25px;
+    transition: 2s;
+}
+
+/* BANNER PRINCIPAL */
+
+section.banner-principal {
+    padding: 60px 4%;
+}
+
+section.banner-principal .interfacebanner {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+section.banner-principal .interfacebanner .banner img{
+    width: 1200px;
+    border-radius: 20px;
+    box-shadow: #0a270b 5px 10px 30px;
+}
+
+/* CURSOR MODIFICADO */
+
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    display: block;
+    border-radius: 0;
+    mix-blend-mode: difference;
+    top: 0;
+    left: 0;
+    z-index: 9999999999999999;  
+  }
+  
+  .circle {
+      position: absolute;
+      display: block;
+      width: 26px;
+      height: 26px;
+      border-radius: 20px;
+      background-color: #fff;
+  }
+  
