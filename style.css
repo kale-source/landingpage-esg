@@ -15,7 +15,6 @@
 body {
     background-color: rgb(255, 255, 255);
     height: 100vh;
-    cursor: none;
 }
 
 .interface {
@@ -64,28 +63,6 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     padding: 0 40px;
-}
-
-header .btn-saibamais button {
-    border-radius: 10px;
-    padding: 10px 25px;
-    font-size: 18px;
-    font-weight: 500;
-    border: none;
-    color: black;
-    cursor: pointer;
-    background-color: #00FF08;
-}
-
-header .btn-saibamais button:hover {
-    box-shadow: #00FF08 2px 2px 10px;
-    transition: 1s;
-    transform: scale(1.05);
-}
-
-header .btn-saibamais button:not(:hover) {
-    transition: 1s;
-    transform: scale(1);
 }
 
 header .interface .modo-light-dark img {
@@ -177,25 +154,25 @@ section .btn-fazerparte button:not(hover) {
 
 /* ÚLTIMAS NOTICIAS */
 
-section.ultimas-noticias {
+section#ultimas-noticias {
     padding: 40px 4%;
 }
 
-section.ultimas-noticias .flex {
+section#ultimas-noticias .flex {
     gap: 50px;
 }
 
-.ultimas-noticias .txt-ultimas-noticias {
+#ultimas-noticias .txt-ultimas-noticias {
     color: rgb(0, 0, 0);
     text-align: center;
     font-size: 20px;
 }
 
-.ultimas-noticias .txt-ultimas-noticias span {
+#ultimas-noticias .txt-ultimas-noticias span {
     color: #00FF08;
 }
 
-.ultimas-noticias .noticia {
+#ultimas-noticias .noticia {
     color: rgb(0, 0, 0);
     background-color: rgba(128, 128, 128, 0.301);
     padding: 40px;
@@ -206,23 +183,23 @@ section.ultimas-noticias .flex {
     cursor: pointer;
 }
 
-.ultimas-noticias .noticia:hover { 
+#ultimas-noticias .noticia:hover { 
     transition: 2s;
     box-shadow: #9b9b9b 3px 3px 15px;
     transform: scale(1.03);
 }
 
-.ultimas-noticias .noticia i {
+#ultimas-noticias .noticia i {
     color: #00FF08;
     font-size: 70px;
 }
 
-.ultimas-noticias .noticia h3 { 
+#ultimas-noticias .noticia h3 { 
     font-size: 26px;
     margin: 15px 0;
 }
 
-.ultimas-noticias .flex a {
+#ultimas-noticias .flex a {
     text-decoration: none;
 }
 
@@ -368,7 +345,7 @@ main .interfaceobrigado .back-home button:hover {
     transform: scale(1.05);
 }
 
-/* SOBRE NÓS (Passar o código)*/
+/* SOBRE NÓS*/
 
 .interfacesobre {
     max-width: 1280px;
@@ -432,26 +409,79 @@ section.banner-principal .interfacebanner .banner img{
     border-radius: 20px;
     box-shadow: #0a270b 5px 10px 30px;
 }
-
-/* CURSOR MODIFICADO */
-
-.cursor {
-    pointer-events: none;
-    position: fixed;
-    display: block;
-    border-radius: 0;
-    mix-blend-mode: difference;
-    top: 0;
-    left: 0;
-    z-index: 9999999999999999;  
-  }
   
-  .circle {
-      position: absolute;
-      display: block;
-      width: 26px;
-      height: 26px;
-      border-radius: 20px;
-      background-color: #fff;
-  }
-  
+
+/* PERGUNTAS FREQUENTES */
+
+section#perguntasfrequentes {
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    border: solid rgba(88, 88, 88, 0.26) none;
+    background-color: rgba(88, 88, 88, 0.26);;
+    padding: 4% 40px;
+    border-radius: 35px;
+}
+
+section#perguntasfrequentes .interfaceperguntasfrequentes .txt-perguntas-frequentes span{
+    color: #00FF08;
+    text-shadow: #000000 1px 1px 8px ;
+}
+
+section#perguntasfrequentes .interfaceperguntasfrequentes details summary {
+    padding: 1%;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(88, 88, 88, 0.26);
+}
+
+section details p {
+    border-bottom: 2px solid rgba(88, 88, 88, 0.26);
+    padding: 20px;
+}
+
+/* RODAPÉ */
+
+section#rodape .interfacerodape {
+    width: 100%;
+    padding: 4% 60px;
+    background: rgba(88, 88, 88, 0.26);   
+}
+
+section#rodape .interfacerodape .redessociais{
+    text-align: center;
+    display: grid;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+section#rodape .interfacerodape .redessociais h3 {
+    font-size: 25px;
+}
+
+section#rodape .interfacerodape .redessociais h3 span {
+    color: #00FF08;
+    text-shadow: #000000 1px 1px 8px ;
+}
+
+section#rodape .interfacerodape .redessociais a {
+    text-decoration: none;
+    color: black;
+    line-height: 2;
+    font-style: normal;
+    transition: 3s;
+    font-size: 17px;
+
+}
+
+section#rodape .interfacerodape .redessociais i {
+    display: inline-block;
+    transition: 2s;
+}
+
+
+section#rodape .interfacerodape .redessociais i:hover {
+    display: inline-block;
+    transition: 2s;
+    transform: scale(1.08);
+    font-weight: 500;
+}
