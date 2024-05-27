@@ -1,0 +1,2 @@
+Algumas funções em JavaScript só funcionam em Live Server no VSCODE ou quando hospedado em algum site, para melhor 
+experiência, abrir através do Live Server.
