@@ -563,6 +563,7 @@ section#rodape .interfacerodape .redessociais i:hover {
 /* RESPONSIVO MOBILE */
 
 @media screen and (max-width: 1300px) {
+
     .interfacesobre .flex .txt-sobre-nos {
         padding: 4% 40px;
         width: 630px;
@@ -589,14 +590,43 @@ section#rodape .interfacerodape .redessociais i:hover {
         width: 1000px;
     }
 
+    
     .interfacesobre .flex .txt-sobre-nos {
         padding: 4% 40px;
         width: 520px;
-        justify-content: center;
+    }
+
+    .interfacesobre .flex {
+        display: grid;
+        padding-left: 20%;
     }
 
     section#perguntasfrequentes .interfaceperguntasfrequentes {
         width: 1000px;
+    }
+
+    section#perguntasfrequentes .interfaceperguntasfrequentes {
+        width: 760px;
+    }
+
+    section.banner-principal .interfacebanner .banner img {
+        width: 900px;
+    }
+
+    section#topo-do-site .interface {
+        width: 900px;
+    }
+    main .interfaceobrigado {
+        width: 900px;
+    }
+    .interfacesobre {
+        width: 900px;
+    }
+    section.banner-principal .interfacebanner {
+        width: 900px;
+    }
+    section#perguntasfrequentes {
+        width: 900px;
     }
 }
 
@@ -610,8 +640,37 @@ section#rodape .interfacerodape .redessociais i:hover {
         width: 410px;
     }
 
+    .interfacesobre .flex {
+        display: grid;
+        padding-left: 20%;
+    }
+
     section#perguntasfrequentes .interfaceperguntasfrequentes {
         width: 900px;
+    }
+
+    section#perguntasfrequentes .interfaceperguntasfrequentes {
+        width: 760px;
+    }
+
+    section.banner-principal .interfacebanner .banner img {
+        width: 840px;
+    }
+
+    section#topo-do-site .interface {
+        width: 840px;
+    }
+    main .interfaceobrigado {
+        width: 840px;
+    }
+    .interfacesobre {
+        width: 840px;
+    }
+    section.banner-principal .interfacebanner {
+        width: 840px;
+    }
+    section#perguntasfrequentes {
+        width: 840px;
     }
 }
 
@@ -627,8 +686,29 @@ section#rodape .interfacerodape .redessociais i:hover {
     }
 
     section#perguntasfrequentes .interfaceperguntasfrequentes {
-        width: 850px;
+        width: 700px;
     }
+
+    section.banner-principal .interfacebanner .banner img {
+        width: 780px;
+    }
+
+    section#topo-do-site .interface {
+        width: 780px;
+    }
+    main .interfaceobrigado {
+        width: 780px;
+    }
+    .interfacesobre {
+        width: 780px;
+    }
+    section.banner-principal .interfacebanner {
+        width: 780px;
+    }
+    section#perguntasfrequentes {
+        width: 780px;
+    }
+
 }
 
 @media screen and (max-width: 965px) {
@@ -637,7 +717,23 @@ section#rodape .interfacerodape .redessociais i:hover {
     }
 
     section#perguntasfrequentes .interfaceperguntasfrequentes {
-        width: 730px;
+        width: 670px;
+    }
+
+    section#topo-do-site .interface {
+        width: 740px;
+    }
+    main .interfaceobrigado {
+        width: 740px;
+    }
+    .interfacesobre {
+        width: 740px;
+    }
+    section.banner-principal .interfacebanner {
+        width: 740px;
+    }
+    section#perguntasfrequentes {
+        width: 740px;
     }
 }
 
@@ -647,7 +743,23 @@ section#rodape .interfacerodape .redessociais i:hover {
     }
 
     section#perguntasfrequentes .interfaceperguntasfrequentes {
-        width: 660px;
+        width: 650px;
+    }
+
+    section#topo-do-site .interface {
+        width: 730px;
+    }
+    main .interfaceobrigado {
+        width: 730px;
+    }
+    .interfacesobre {
+        width: 730px;
+    }
+    section.banner-principal .interfacebanner {
+        width: 730px;
+    }
+    section#perguntasfrequentes {
+        width: 730px;
     }
 }
 
@@ -658,6 +770,22 @@ section#rodape .interfacerodape .redessociais i:hover {
 
     section#perguntasfrequentes .interfaceperguntasfrequentes {
         width: 600px;
+    }
+
+    section#topo-do-site .interface {
+        width: 650px;
+    }
+    main .interfaceobrigado {
+        width: 650px;
+    }
+    .interfacesobre {
+        width: 650px;
+    }
+    section.banner-principal .interfacebanner {
+        width: 650px;
+    }
+    section#perguntasfrequentes {
+        width: 650px;
     }
 }
 
@@ -675,13 +803,29 @@ section#rodape .interfacerodape .redessociais i:hover {
     }
 
     section#perguntasfrequentes .interfaceperguntasfrequentes {
-        width: 570px;
+        width: 530px;
+    }
+
+    section#topo-do-site .interface {
+        width: 600px;
+    }
+    main .interfaceobrigado {
+        width: 600px;
+    }
+    .interfacesobre {
+        width: 600px;
+    }
+    section.banner-principal .interfacebanner {
+        width: 600px;
+    }
+    section#perguntasfrequentes {
+        width: 600px;
     }
 }
 
 @media screen and (max-width: 650px) { 
     section.banner-principal .interfacebanner .banner img {
-        width: 550px;
+        width: 540px;
     }
 
     section.topo-do-site .interface .flex .txt-topo-site {
@@ -689,13 +833,29 @@ section#rodape .interfacerodape .redessociais i:hover {
     }
 
     section#perguntasfrequentes .interfaceperguntasfrequentes {
-        width: 530px;
+        width: 480px;
+    }
+
+    section#topo-do-site .interface {
+        width: 540px;
+    }
+    main .interfaceobrigado {
+        width: 540px;
+    }
+    .interfacesobre {
+        width: 540px;
+    }
+    section.banner-principal .interfacebanner {
+        width: 540px;
+    }
+    section#perguntasfrequentes {
+        width: 540px;
     }
 }
 
 @media screen and (max-width: 600px) { 
     section.banner-principal .interfacebanner .banner img {
-        width: 500px;
+        width: 490px;
     }
 
     section.topo-do-site .interface .flex .txt-topo-site {
@@ -711,17 +871,33 @@ section#rodape .interfacerodape .redessociais i:hover {
     }
 
     section#perguntasfrequentes .interfaceperguntasfrequentes {
-        width: 480px;
+        width: 430px;
     }
 
     header .logoobrigado {
         scale: 0.8;
     }
+
+    section#topo-do-site .interface {
+        width: 490px;
+    }
+    main .interfaceobrigado {
+        width: 490px;
+    }
+    .interfacesobre {
+        width: 490px;
+    }
+    section.banner-principal .interfacebanner {
+        width: 490px;
+    }
+    section#perguntasfrequentes {
+        width: 490px;
+    }
 }
 
 @media screen and (max-width: 550px) { 
     section.banner-principal .interfacebanner .banner img {
-        width: 450px;
+        width: 460px;
     }
 
     section.topo-do-site .interface .flex .txt-topo-site {
@@ -733,11 +909,27 @@ section#rodape .interfacerodape .redessociais i:hover {
     }
 
     section#perguntasfrequentes .interfaceperguntasfrequentes {
-        width: 430px;
+        width: 400px;
     }
 
     section#rodape .interfacerodape .redessociais h3{
         font-size: 20px;
+    }
+
+    section#topo-do-site .interface {
+        width: 460px;
+    }
+    main .interfaceobrigado {
+        width: 460px;
+    }
+    .interfacesobre {
+        width: 460px;
+    }
+    section.banner-principal .interfacebanner {
+        width: 460px;
+    }
+    section#perguntasfrequentes {
+        width: 460px;
     }
 }
 
@@ -747,7 +939,7 @@ section#rodape .interfacerodape .redessociais i:hover {
     }
 
     section.banner-principal .interfacebanner .banner img {
-        width: 400px;
+        width: 430px;
     }
 
     section.topo-do-site .interface .flex .txt-topo-site {
@@ -762,11 +954,31 @@ section#rodape .interfacerodape .redessociais i:hover {
     section#perguntasfrequentes .interfaceperguntasfrequentes {
         width: 360px;
     }
+
+    section#topo-do-site .interface {
+        width: 460px;
+    }
+    main .interfaceobrigado {
+        width: 460px;
+    }
+    .interfacesobre {
+        width: 460px;
+    }
+    section.banner-principal .interfacebanner {
+        width: 460px;
+    }
+    section#perguntasfrequentes {
+        width: 460px;
+    }
 }
 
 @media screen and (max-width: 460px) {
     section#rodape .interfacerodape .redessociais h3{
         font-size: 15px;
+    }
+
+    section.banner-principal .interfacebanner .banner img {
+        width: 390px;
     }
 
     form input, form textarea {
@@ -777,11 +989,27 @@ section#rodape .interfacerodape .redessociais i:hover {
         justify-content: center;
         scale: 0.6;
     }
+
+    section#topo-do-site .interface {
+        width: 420px;
+    }
+    main .interfaceobrigado {
+        width: 420px;
+    }
+    .interfacesobre {
+        width: 420px;
+    }
+    section.banner-principal .interfacebanner {
+        width: 420px;
+    }
+    section#perguntasfrequentes {
+        width: 420px;
+    }
 }
 
 @media screen and (max-width: 440px) { 
     section.banner-principal .interfacebanner .banner img {
-        width: 340px;
+        width: 360px;
     }
 
     section.topo-do-site .interface .flex .txt-topo-site {
