@@ -91,3 +91,11 @@ button {
   transform: scale(1.05);
   box-shadow: #00FF08 2px 2px 10px;
 }
+
+@media screen and (max-width: 530px) {
+
+
+  button {
+    font-size: 15px;
+  }
+}

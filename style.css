@@ -8,12 +8,29 @@
     scroll-behavior: smooth;
 }
 
+:root {
+    --white: rgb(255, 255, 255);
+    --dark: #000000;
+    --green: #00FF08;
+    --grey: rgba(102, 102, 102, 0.116);
+    --greygradient: rgba(131, 131, 131, 0.116);
+    --greygradient2: rgba(131, 131, 131, 0.116);
+}
+
+[data-theme="dark"] {
+    --white: #000;
+    --dark: rgb(255, 255, 255);
+    --greygradient: black;
+    --grey: black;
+    --greygradient2: rgba(180, 180, 180, 0.116);
+}
+
 .flex {
     display: flex;
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white);
     height: 100vh;
 }
 
@@ -29,7 +46,7 @@ body {
 }
 
 header {
-    background-color: rgba(131, 131, 131, 0.116);;
+    background-color: var(--greygradient);
     padding: 0px 4%;
 }
 
@@ -40,13 +57,13 @@ header > .interface {
 }
 
 header a {
-    color: rgb(0, 0, 0);
+    color: var(--dark);
     text-decoration: none;
     display: inline-block;
 }
 
 header a:hover {
-    color: #000000;
+    color: var(--dark);
     transition: 2s;
     transform: scale(1.05);
 }
@@ -94,17 +111,17 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site .txt-topo-site h1 {
-    color: rgb(0, 0, 0);
+    color: var(--dark);
     font-size: 35px;
     line-height: 40px;
 }
 
 .topo-do-site .txt-topo-site h1 span {
-    color: #00FF08;
+    color: var(--green);
 }
 
 .txt-topo-site {
-    color: rgb(0, 0, 0);
+    color: var(--dark);
 }
 
 section .btn-fazerparte button {
@@ -115,11 +132,11 @@ section .btn-fazerparte button {
     border: none;
     color: black;
     cursor: pointer;
-    background-color: #00FF08;
+    background-color: var(--green);
 }
 
 section .btn-fazerparte button:hover {
-    box-shadow: #00FF08 2px 2px 10px;
+    box-shadow: var(--green) 2px 2px 10px;
     transition: 1s;
     transform: scale(1.05);
 }
@@ -163,20 +180,20 @@ section#ultimas-noticias .flex {
 }
 
 #ultimas-noticias .txt-ultimas-noticias {
-    color: rgb(0, 0, 0);
+    color: var(--dark);
     text-align: center;
     font-size: 20px;
 }
 
 #ultimas-noticias .txt-ultimas-noticias span {
-    color: #00FF08;
+    color: var(--green);
 }
 
 #ultimas-noticias .noticia {
-    color: rgb(0, 0, 0);
-    background-color: rgba(128, 128, 128, 0.301);
+    color: var(--dark);
+    background-color: var(--grey);
     padding: 40px;
-    border: 2px solid rgba(0, 0, 0, 0);
+    border: 2px solid none;
     border-radius: 20px;
     margin-top: 25px;
     transition: 2s;
@@ -190,7 +207,7 @@ section#ultimas-noticias .flex {
 }
 
 #ultimas-noticias .noticia i {
-    color: #00FF08;
+    color: var(--green);
     font-size: 70px;
 }
 
@@ -211,7 +228,7 @@ section#formulario {
 }
 
 section#formulario .interface {
-    background-color: rgba(88, 88, 88, 0.26);
+    background-color: var(--grey);
     padding: 100px;
     border-radius: 35px;
 }
@@ -220,11 +237,11 @@ section#formulario .interface .txt-formulario{
     text-align: center;
     padding-bottom: 40px;
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: var(--dark);
 }
 
 section#formulario .interface .txt-formulario span {
-    color: #00FF08;
+    color: var(--green);
     animation: underline 2s ease-in-out infinite alternate;
 }
 
@@ -249,13 +266,13 @@ form {
 
 form input, form textarea {
     width: 100%;
-    background-color: rgba(131, 131, 131, 0.418);
+    background-color: white;
     border: none;
     outline: none;
     padding: 20px 15px;
     border-radius: 10px;
     font-size: 18px;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
 form textarea {
@@ -270,7 +287,7 @@ form .btn-enviar {
 
 form .btn-enviar input {
     width: 250px;
-    background-color: #00FF08;
+    background-color: var(--green);
     color: black;
     font-weight: 600;
     cursor: pointer;
@@ -278,7 +295,7 @@ form .btn-enviar input {
 }
 
 form .btn-enviar input:hover {
-    box-shadow: #00FF08 2px 2px 10px;
+    box-shadow: var(--green) 2px 2px 10px;
     transition: 1s;
     transform: scale(1.05);
 }
@@ -298,12 +315,12 @@ main .interfaceobrigado {
 }
 
 main .interfaceobrigado h1 {
-    color: rgb(0, 0, 0);
+    color: var(--dark);
     margin-bottom: 20px;
 }
 
 main .interfaceobrigado span {
-    color: #00FF08;
+    color: var(--green);
 }
 
 .logoobrigado {
@@ -332,15 +349,15 @@ main .interfaceobrigado .back-home button {
     font-size: 18px;
     font-weight: 500;
     border: none;
-    color: black;
+    color: var(--dark);
     cursor: pointer;
     font-weight: 600;
-    background-color: #00FF08;
+    background-color: var(--green);
     transition: 1s;
 }
 
 main .interfaceobrigado .back-home button:hover {
-    box-shadow: #00FF08 2px 2px 10px;
+    box-shadow: var(--dark) 2px 2px 10px;
     transition: 2s;
     transform: scale(1.05);
 }
@@ -362,24 +379,22 @@ section.interfacesobre .flex {
     gap: 50px;
 }
 
-#sobre-nos .interfacesobre .flex .txt-sobre-nos .btn-vernoticias button {
-    margin-top: 15px;
+section#sobre-nos .interfacesobre .flex .txt-sobre-nos .btn-noticias button{
     border-radius: 10px;
     padding: 10px 25px;
+    margin-top: 20px;
     font-size: 18px;
     font-weight: 500;
     border: none;
     color: black;
+    background-color: var(--green);
     cursor: pointer;
-    font-weight: 600;
-    background-color: #00FF08;
-    transition: 2s;
 }
 
-#sobre-nos .interfacesobre .flex .txt-sobre-nos .btn-vernoticias button:hover {
+section#sobre-nos .interfacesobre .flex .txt-sobre-nos .btn-noticias button:hover {
+    box-shadow: var(--green) 2px 2px 10px;
     transition: 2s;
     transform: scale(1.05);
-    box-shadow: #00FF08 2px 2px 10px;
 }
 
 #sobre-nos .interfacesobre .imgsobrenos img {
@@ -387,7 +402,7 @@ section.interfacesobre .flex {
 }
 
 .txt-sobre-nos {
-    color: rgb(0, 0, 0);
+    color: var(--dark);
     font-size: 20px;
 }
 
@@ -397,7 +412,7 @@ section.interfacesobre .flex {
 }
 
 .txt-sobre-nos h2 span { 
-    color: #00FF08;
+    color: var(--green);
 }
 
 .txt-sobre-nos p {
@@ -406,11 +421,17 @@ section.interfacesobre .flex {
 
 .interfacesobre .flex .txt-sobre-nos {
     padding: 40px;
-    background-color: rgba(131, 131, 131, 0.116);
-    border: 2px solid rgba(0, 0, 0, 0.13);
+    background-color: var(--grey);
+    border: 2px solid var(--greygradient);
     border-radius: 25px;
     margin-top: 25px;
     transition: 2s;
+}
+
+.interfacesobre .flex .txt-sobre-nos:hover {
+    transition: 2s;
+    transform: scale(1.03);
+    box-shadow: var(--green) 2px 2px 10px; 
 }
 
 /* BANNER PRINCIPAL */
@@ -429,26 +450,367 @@ section.banner-principal .interfacebanner .banner img{
     border-radius: 20px;
     box-shadow: #0a270b 5px 10px 30px;
 }
-
-/* CURSOR MODIFICADO */
-
-.cursor {
-    pointer-events: none;
-    position: fixed;
-    display: block;
-    border-radius: 0;
-    mix-blend-mode: difference;
-    top: 0;
-    left: 0;
-    z-index: 9999999999999999;  
-  }
   
-  .circle {
-      position: absolute;
-      display: block;
-      width: 26px;
-      height: 26px;
-      border-radius: 20px;
-      background-color: #fff;
-  }
-  
+
+/* PERGUNTAS FREQUENTES */
+
+section#perguntasfrequentes {
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    border: solid var(--greygradient) none;
+    background-color: var(--greygradient);
+    padding: 4% 40px;
+    border-radius: 35px;
+}
+
+section#perguntasfrequentes details {
+    color: var(--dark);
+}
+
+section#perguntasfrequentes .interfaceperguntasfrequentes .txt-perguntas-frequentes {
+    color: var(--dark);
+}
+
+section#perguntasfrequentes .interfaceperguntasfrequentes .txt-perguntas-frequentes span{
+    color: var(--green);
+    text-shadow: var(--dark) 1px 1px 8px ;
+}
+
+section#perguntasfrequentes .interfaceperguntasfrequentes details summary {
+    padding: 1%;
+    font-weight: 600;
+    border-bottom: 2px solid var(--dark);
+}
+
+section details p {
+    border-bottom: 2px solid var(--dark);
+    padding: 20px;
+}
+
+section#perguntasfrequentes .interfaceperguntasfrequentes .fazerquiz button {
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: var(--green);
+    transition: 2s;
+}
+
+section#perguntasfrequentes .interfaceperguntasfrequentes .fazerquiz button:hover {
+    transition: 2s;
+    transform: scale(1.05);
+    box-shadow: var(--green) 2px 2px 10px;
+}
+
+
+/* RODAPÉ */
+
+section#rodape .interfacerodape {
+    width: 100%;
+    margin: 0 auto;
+    padding: 4% 60px;
+    background: var(--greygradient2);
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+section#rodape .interfacerodape .redessociais{
+    text-align: center;
+    display: grid;
+}
+
+section#rodape .interfacerodape .redessociais h3 {
+    font-size: 25px;
+    color: var(--dark);
+}
+
+section#rodape .interfacerodape .redessociais h3 span {
+    color: var(--green);
+    text-shadow: var(--dark) 1px 1px 8px ;
+}
+
+section#rodape .interfacerodape .redessociais a {
+    text-decoration: none;
+    color: var(--dark);
+    line-height: 2;
+    font-style: normal;
+    transition: 3s;
+    font-size: 17px;
+
+}
+
+section#rodape .interfacerodape .redessociais i {
+    display: inline-block;
+    transition: 2s;
+    color: var(--dark);
+}
+
+
+section#rodape .interfacerodape .redessociais i:hover {
+    display: inline-block;
+    transition: 2s;
+    transform: scale(1.08);
+    font-weight: 500;
+}
+
+
+/* RESPONSIVO MOBILE */
+
+@media screen and (max-width: 1300px) {
+    .interfacesobre .flex .txt-sobre-nos {
+        padding: 4% 40px;
+        width: 630px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .menu-desktop {
+        display: none;
+    }
+
+    section.banner-principal .interfacebanner .banner img {
+        width: 1100px;
+    }
+
+    section#perguntasfrequentes .interfaceperguntasfrequentes {
+        width: 1100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    section.banner-principal .interfacebanner .banner img {
+        width: 1000px;
+    }
+
+    .interfacesobre .flex .txt-sobre-nos {
+        padding: 4% 40px;
+        width: 520px;
+        justify-content: center;
+    }
+
+    section#perguntasfrequentes .interfaceperguntasfrequentes {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1068px) {
+    section.banner-principal .interfacebanner .banner img {
+        width: 900px;
+    }
+
+    .interfacesobre .flex .txt-sobre-nos {
+        padding: 4% 40px;
+        width: 410px;
+    }
+
+    section#perguntasfrequentes .interfaceperguntasfrequentes {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .interfacesobre .flex {
+        display: grid;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .interfacesobre .flex .imgsobrenos img {
+        scale: 0.95;
+    }
+
+    section#perguntasfrequentes .interfaceperguntasfrequentes {
+        width: 850px;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    section.banner-principal .interfacebanner .banner img {
+        width: 750px;
+    }
+
+    section#perguntasfrequentes .interfaceperguntasfrequentes {
+        width: 730px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    section.banner-principal .interfacebanner .banner img {
+        width: 700px;
+    }
+
+    section#perguntasfrequentes .interfaceperguntasfrequentes {
+        width: 660px;
+    }
+}
+
+@media screen and (max-width: 755px) { 
+    section.banner-principal .interfacebanner .banner img {
+        width: 650px;
+    }
+
+    section#perguntasfrequentes .interfaceperguntasfrequentes {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 700px) { 
+    section.banner-principal .interfacebanner .banner img {
+        width: 600px;
+    }
+
+    section.topo-do-site .interface .flex {
+        display: grid;
+    }
+
+    section.topo-do-site .interface .flex .img-topo-site {
+        display: none;
+    }
+
+    section#perguntasfrequentes .interfaceperguntasfrequentes {
+        width: 570px;
+    }
+}
+
+@media screen and (max-width: 650px) { 
+    section.banner-principal .interfacebanner .banner img {
+        width: 550px;
+    }
+
+    section.topo-do-site .interface .flex .txt-topo-site {
+        text-align: center;
+    }
+
+    section#perguntasfrequentes .interfaceperguntasfrequentes {
+        width: 530px;
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    section.banner-principal .interfacebanner .banner img {
+        width: 500px;
+    }
+
+    section.topo-do-site .interface .flex .txt-topo-site {
+        text-align: center;
+    }
+
+    .interfacesobre .flex {
+        justify-content: center;
+    }
+
+    .interfacesobre .flex img {
+        display: none;
+    }
+
+    section#perguntasfrequentes .interfaceperguntasfrequentes {
+        width: 480px;
+    }
+
+    header .logoobrigado {
+        scale: 0.8;
+    }
+}
+
+@media screen and (max-width: 550px) { 
+    section.banner-principal .interfacebanner .banner img {
+        width: 450px;
+    }
+
+    section.topo-do-site .interface .flex .txt-topo-site {
+        text-align: center;
+    }
+
+    .interfacesobre .flex .imgsobrenos img {
+        scale: 0.8;
+    }
+
+    section#perguntasfrequentes .interfaceperguntasfrequentes {
+        width: 430px;
+    }
+
+    section#rodape .interfacerodape .redessociais h3{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    section#formulario .interface form .btn-enviar input {
+        width: 180px; 
+    }
+
+    section.banner-principal .interfacebanner .banner img {
+        width: 400px;
+    }
+
+    section.topo-do-site .interface .flex .txt-topo-site {
+        text-align: center;
+    }
+
+    .interfacesobre .flex {
+        justify-content: center;
+        scale: 0.95;
+    }
+
+    section#perguntasfrequentes .interfaceperguntasfrequentes {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    section#rodape .interfacerodape .redessociais h3{
+        font-size: 15px;
+    }
+
+    form input, form textarea {
+        font-size: 15px;
+    }
+
+    header .logoobrigado {
+        justify-content: center;
+        scale: 0.6;
+    }
+}
+
+@media screen and (max-width: 440px) { 
+    section.banner-principal .interfacebanner .banner img {
+        width: 340px;
+    }
+
+    section.topo-do-site .interface .flex .txt-topo-site {
+        text-align: center;
+    }
+
+    header > .interface {
+        display: grid;
+        align-items: center;
+        padding: 4% 40px;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .interfacesobre .flex .txt-sobre-nos {
+        padding: 4% 40px;
+        width: 300px;
+    }
+
+    .interfacesobre .flex .imgsobrenos img {
+        scale: 0.5;
+    }
+
+    section#perguntasfrequentes .interfaceperguntasfrequentes {
+        width: 330px;
+    }
+
+    section#formulario .interface form .btn-enviar input {
+        width: 150px;
+    }
+
+}
